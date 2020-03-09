@@ -1,5 +1,10 @@
 1. What problem does the context API help solve?
+   For small-scale projects, it can make state management more simplistic with passing around props and actions.
 1. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+   Action are basically functions that would alter state that we use to pass into a reducer. Reducers reduce our app down, in a sense. They help us consolodate state and actions into one file that can passed around the application. They also help our apps stay immutable. Store is the storage of a given reducer's state. It's the single source of truth becuase it stores everything that has to do with state in one place
 1. What is the difference between Application state and Component state? When would be a good time to use one over the other?
+   Application state is basically global state that is available to all components and is stored in memory. Component state is local and only available to and stored in a given component (unless passed through props to other components).
 1. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+   Thunk is a middlewear that allows us to write action creators that return a function rather than an action. Like I said before, it changes our action creators by letting us return a function.
 1. What is your favorite state management system you've learned and this sprint? Please explain why!
+   I would say Redux is my favorite for a few reasons. Admittedly, I have much more experience with Redux than I do with Context, so I can't confidently dispute one or the other. However, from what I know and have seen thus far, Redux seems to be a more robust way to manage state with an application; especially those are larger size. It's also used more in the workplace so I plan to stick with Redux for the majority of my projects while freshening up on Context every once in a while.
